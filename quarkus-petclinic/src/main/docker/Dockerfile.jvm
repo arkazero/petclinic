@@ -50,5 +50,5 @@ COPY target/*-runner.jar /deployments/app.jar
 
 EXPOSE 8080
 USER 1001
-RUN chmod +x entrypoint.sh
+RUN chmod +x run-java.sh
 ENTRYPOINT [ "/deployments/run-java.sh" ]
